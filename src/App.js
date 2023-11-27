@@ -25,11 +25,16 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#20242e';
       showAlert("Dark mode has been enabled","success");
+      document.title = 'TextUtiles - Dark Mode';
+      // setInterval(() => {
+      //   document.title = 'do your assesment';
+      // }, 2000);
     }
     else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled","success");
+      document.title = 'TextUtiles - Light Mode';
     }
   }
   return (
